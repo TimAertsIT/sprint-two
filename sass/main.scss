@@ -1,0 +1,79 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+@media (min-width: 992px) {
+#bookmark-logo {
+    padding-left: 100px;
+}}
+
+#login-btn {
+    padding-right: 100px;
+}
+
+#inside-btn {
+    padding: 5px 25px;
+}
+
+.nav-item {
+    font-size: small;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.positioning-container {
+    position: relative;
+}
+
+.background-spot {
+    height: 200px;
+    color: $primary;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 30px;
+}
+
+.pic2 {
+    position: relative;
+}
+
+@media (min-width: 768px){
+.pic2 {
+    position: absolute;
+    top: 50px;
+    left: 0px;}
+
+.background-spot {
+    height: 100px;
+    color: $primary;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+}}
+
+@media (min-width: 992px) {
+
+.pic2 {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+
+.background-spot {
+    height: 300px;
+    color: $primary;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: -35px;
+} }
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
