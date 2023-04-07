@@ -1,37 +1,81 @@
-$primary: #5265E1;
-$secondary: #FA5959;
-
-@media (min-width: 992px) {
-#bookmark-logo {
-    padding-left: 100px;
-}}
-
-#login-btn {
-    padding-right: 100px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#inside-btn {
-    padding: 5px 25px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding-top: 100px;
+}
+
+// variables 
+
+$primary: #5265E1;
+$secondary: #FA5959;
+$success: rgb(7, 7, 45);
+$navbar-light-toggler-border-color: white;
+
+//navbar
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
 }
 
 .nav-item {
     font-size: small;
 }
 
-body {
-    padding-top: 100px;
+.navbar .navbar-nav .nav-link:hover {
+    color: $secondary;}
+
+#inside-btn {
+    text-transform: uppercase;
+    &:hover {
+    color: $secondary;}}
+    
+.navbar .btn:hover {
+    color: $secondary;
+    background-color: white;}
+
+.btn-outline-secondary:hover {
+    color: $secondary;
+    background-color: white;}
+
+.btn-outline-secondary {
+    &:hover {
+        color: $secondary;
+        background-color: white;}
+    }
+
+//Navbar errors: hover on button not working
+
+// first section
+
+.btn-primary {
+    color: white;
+    background-color: $primary;
+    &:hover {
+        color: $primary;
+        background-color: white; 
+    }
 }
 
 .positioning-container {
     position: relative;
 }
 
-.background-spot {
-    height: 200px;
+@mixin background-positions {
     color: $primary;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
     position: absolute;
+}
+
+.background-spot {
+    @include background-positions;
+    height: 250px;
     bottom: 0px;
     right: 0px;
     margin-bottom: 30px;
@@ -41,40 +85,23 @@ body {
     position: relative;
 }
 
-@media (min-width: 768px){
-
-.pic2 {
-    position: absolute;
-    top: 50px;
-    left: 0px;}
-
-.background-spot {
-    height: 100px;
-    color: $primary;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    position: absolute;
-    bottom: 50px;
-    right: 0px;
-}}
-
 @media (min-width: 992px) {
 
 .pic2 {
     position: absolute;
     top: -50px;
-    left: 0px;
+    left: 20px;
 }
 
 .background-spot {
     height: 300px;
-    color: $primary;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    position: absolute;
+    @include background-positions;
     bottom: -100px;
-    right: -18px;
+    right: -75px;
 } }
+
+ // hover on buttons not working
+
  // tabs 
 
 .my-tabs {
@@ -227,30 +254,17 @@ body {
     $accordion-color: #5265E1;
   }
 
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-$accordion-icon-active-color: #5265E1; 
-
-.accordion-button.collapsed::before {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-}
-
-.accordion {
-    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
 
 // footer
 
-html {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+
+.cropped {
+display: block;
+width: 20px;
+height: 20px;
+background-size: cover;
+background-position: left;
 }
 
-body {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
 
 @import '../node_modules/bootstrap/scss/bootstrap';

@@ -11,25 +11,25 @@
 <body>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container">
-          <a class="navbar-brand" id="bookmark-logo" href="#">
+          <a class="navbar-brand ps-4 ms-2 ms-lg-0" id="bookmark-logo" href="#">
           <img src="/imagenes/logo-bookmark.svg" alt="the official logo of the bookmark company" width="150" height="24"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item pe-5 fw-bold">
-                  <a class="nav-link" href="#">FEATURES</a>
+                  <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item pe-5 fw-bold">
-                  <a class="nav-link" href="#">PRICING</a>
+                  <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item pe-5 fw-bold">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <form class="d-flex" id="login-btn">
-                <button class="btn btn-sm btn-outline-secondary bg-secondary" id="inside-btn" style="color:white" type="button">LOGIN</button>
+            <form class="d-flex pe-5" id="login-btn">
+                <button class="btn btn-sm btn-outline-secondary bg-secondary pt-1 pb-1 ps-4 pe-4" id="inside-btn" style="color:white" type="button">Login</button>
             </form>
         </div>
         </div>
@@ -171,11 +171,38 @@
   </div>
 </div>
 </div>
-<div class="container-fluid mt-5 pt-5 bg-primary">
+<div class="container-fluid mt-5 pt-5 pb-5 bg-primary">
   <div class="row">
-    <div class="col12 text-center">
+    <div class="col12 offset-md-4 col-md-4 text-center">
       <p class="text-white">35,000 ALREADY JOINED</p>
-      <h4 class="text-white pe-1 ps-1">Stay up-to-date with what we're doing</h4> 
+      <h4 class="text-white pe-1 ps-1 pb-2">Stay up-to-date with what we're doing</h4> 
+      <form class="needs-validation d-md-flex flex-md-row" novalidate>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder= "Enter your email address" name="email" required >
+          <div class="valid-feedback">Valid email address.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="d-grid gap-2 gap-md-0 d-md-inline">
+          <button type="submit" class="btn btn-primary btn-sm bg-secondary ps-md-3 pe-md-3 ms-md-2 font-size-sm pt-md-2 pb-md-2">Contact us</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center bg-success text-white">
+  <div class="row">
+    <div class="col12 offset-md-1 col-md-2 mt-3 mb-3 fw-bold">
+      <div class="cropped" style="background-image: url(/imagenes/logo-bookmark.svg)"></div>
+      <p>BOOKMARK</p>
+    </div>
+    <div class="col12 col-md-1 mb-2 mt-md-2">FEATURES</div>
+    <div class="col12 col-md-1 mb-2 mt-md-2">PRICING</div>
+    <div class="col12 col-md-1 mb-3 mt-md-2">CONTACT</div>
+    <div class="col12 offset-md-4 col-md-1 mt-md-2 mb-3">
+      <a  href="#">
+        <img src="/imagenes/icon-facebook.svg" alt="the facebook logo" width="15" height="15"> </a>
+      <a class="ms-2" href="#">
+        <img src="/imagenes/icon-twitter.svg" alt="the twitter logo" width="15" height="15"> </a>
     </div>
   </div>
 </div>
