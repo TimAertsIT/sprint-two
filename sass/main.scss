@@ -41,7 +41,7 @@ $navbar-light-toggler-border-color: white;
 
 // first section
 
-#first-button, #third-button, #fourth-button, #fifth-button, #sixth-button {
+#first-button, #third-button, #fourth-button, #fifth-button, #sixth-button, #seventh-button {
     &:hover {
         color: $primary!important;
         background-color: white!important;
@@ -225,27 +225,33 @@ $navbar-light-toggler-border-color: white;
 
 // accordion
 
-#accordionFlushExample {
-    border-top: 1px grey solid;
-    border-bottom: 1px grey solid;
+.accordion {
+    --bs-accordion-btn-icon: url("/imagenes/icon-arrow.svg")!important;}
+
+
+@media (min-width: 992px) {
+    #bookmark-one {
+        border-top: 1px rgb(227, 226, 226) solid;
+    }
 }
 
-#flush-headingFour {
-    border-bottom: 10px grey solid;
+.accordion-button {
+    &:hover {
+    color: $secondary;
+    }
 }
 
-.accordion-button.collapsed::before {
-    $accordion-button-color: #5265E1;
-    $accordion-icon-color: #5265E1;
-    $accordion-color: #5265E1;
+#bookmark-one {
+    &:hover {
+    border-top: 1px rgb(227, 226, 226) solid;
+}}
+
+.accordion-button:not(.collapsed){
+    color:rgb(4, 4, 43)!important;
+    background-color: white!important;
+    box-shadow: none!important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")!important;
 }
-
-.accordion-button:not(.collapsed)::after {
-    $accordion-button-color: #5265E1;
-    $accordion-icon-color: #5265E1;
-    $accordion-color: #5265E1;
-  }
-
 
 // footer
 
