@@ -43,8 +43,8 @@
             <div class="col-12 ml-5 col-md-6 order-md-1 ps-5 pe-5 mb-3 text-center text-md-start">
               <h1>A Simple Bookmark Manager</h1>
               <p class="fw-light text-muted pt-3 pb-3 pe-5">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
-              <button type="button" class="btn btn-primary btn-sm bg-primary ps-3 pe-3 font-size-sm">Get it on Chrome</button>
-              <button type="button" class="btn btn-primary btn-sm bg-light text-dark border-light shadow-sm ps-3 pe-3 ms-3 font-size-sm">Get it on Firefox</button>
+              <button type="button" class="btn btn-primary btn-sm bg-primary ps-3 pe-3 font-size-sm" id="first-button">Get it on Chrome</button>
+              <button type="button" class="btn btn-primary btn-sm bg-light text-dark border-light shadow-sm ps-3 pe-3 ms-3 font-size-sm" id="second-button">Get it on Firefox</button>
             </div>
         </div>
     </div>
@@ -52,20 +52,20 @@
       <div class="row">
         <div class="col12 offset-md-4 col-md-4 offset-md-4 text-center ">
           <h4>Features</h4>
-          <p class="fw-light text-muted">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go </p>
+          <p class="fw-light text-muted">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
         </div>
       </div>
     </div>
     <div class="container mt-3 mb-5">
       <ul class="nav nav-tabs my-tabs flex-column flex-sm-row justify-content-center">
-        <li class="nav-item text-center navigation-tab">
-          <a class="nav-link active" aria-current="page" id="mytab" href="#">Simple Bookmarking</a>
+        <li class="nav-item text-center navigation-tab fw-bold">
+          <a class="nav-link active" aria-current="page" id="mytab" href="#"><span class="extra-border">Simple Bookmarking</span></a>
         </li>
         <li class="nav-item text-center navigation-tab">
-          <a class="nav-link" href="#">Speedy Searching</a>
+          <a class="nav-link" href="#" id="mysecondtab">Speedy Searching</a>
         </li>
         <li class="nav-item text-center navigation-tab">
-          <a class="nav-link" href="#">Easy Sharing</a>
+          <a class="nav-link" href="#" id="mythirdtab">Easy Sharing</a>
         </li>
       </ul>
     </div>
@@ -75,16 +75,16 @@
       <div class="background-spot2 w-75 bg-primary pb-5 mb-5"></div>
       <img src="/imagenes/illustration-features-tab-1.svg" class="img-fluid pic3 pe-3" alt="illustration features"> </a>
     </div>
-    <div class="col-12 ml-5 col-md-6 ps-5 pe-5 mb-3 text-center text-md-start mt-5 pt-5 mt-lg-2 pt-lg-2 pe-lg-0">
+    <div class="col-12 ml-5 col-md-6 ps-5 pe-5 mb-3 text-center text-md-start mt-5 pt-5 mt-lg-5 pt-lg-2 pe-lg-0">
       <h3>Bookmark in one click</h3>
       <p class="fw-light text-muted pt-3 pb-3 pe-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. </p>
-      <button type="button" class="d-none d-lg-block btn btn-primary btn-sm bg-primary ps-3 pe-3 font-size-sm">More info</button>
+      <button type="button" class="d-none d-lg-block btn btn-primary btn-sm bg-primary ps-3 pe-3 font-size-sm" id="third-button">More info</button>
     </div>
   </div>
 </div>
 <div class="container mt-5 pt-5">
   <div class="row">
-    <div class="col12 offset-md-4 col-md-4 offset-md-4 text-center ">
+    <div class="col12 offset-md-4 col-md-4 offset-md-4 text-center mt-lg-5">
       <h4>Download the extension</h4> 
       <p class="fw-light text-muted">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize. </p>
     </div>

@@ -27,40 +27,30 @@ $navbar-light-toggler-border-color: white;
     font-size: small;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-    color: $secondary;}
-
-#inside-btn {
-    text-transform: uppercase;
+.navbar .navbar-nav .nav-link {
     &:hover {
     color: $secondary;}}
+
+#inside-btn {
+    text-transform: uppercase;}
     
-.navbar .btn:hover {
-    color: $secondary;
-    background-color: white;}
-
-.btn-outline-secondary:hover {
-    color: $secondary;
-    background-color: white;}
-
-.btn-outline-secondary {
+.navbar .btn {
     &:hover {
-        color: $secondary;
-        background-color: white;}
-    }
-
-//Navbar errors: hover on button not working
+    color: $secondary!important;
+    background-color: white!important;}}
 
 // first section
 
-.btn-primary {
-    color: white;
-    background-color: $primary;
+#first-button, #third-button {
     &:hover {
-        color: $primary;
-        background-color: white; 
-    }
-}
+        color: $primary!important;
+        background-color: white!important;
+}}
+
+#second-button {
+    &:hover {
+        border: 1px solid rgb(4, 4, 43)!important;
+}}
 
 .positioning-container {
     position: relative;
@@ -100,47 +90,57 @@ $navbar-light-toggler-border-color: white;
     right: -75px;
 } }
 
- // hover on buttons not working
-
  // tabs 
 
-.my-tabs {
-    border-radius: 0;
+.extra-border {
+    border-bottom: 3px solid $secondary;
 }
 
-.my-tabs.nav-tabs {
-    border-bottom: 1px grey solid; 
-}
-
-.my-tabs .nav-link {
-    border-bottom: 1px grey solid; 
-}
-
-.navigation-tab {
-    border-bottom: 1px grey solid;
-}
-
-.my-tabs .nav-link.active .my-tabs .nav-link:focus, .my-tabs .nav-link:hover {
-    border-color: $secondary;
-}
-
-#mytab.nav-link.active {
-    border-bottom: 1px grey solid;
-    border-left: none;
-    border-top: 1px grey solid;
-    border-right: none;
+.nav-tabs .nav-link {
+    border-top-right-radius: 0!important;
+    border-top-left-radius: 0!important;
+    border-right: none!important;
+    border-left: none!important;
+    &:hover {
+        color: $secondary!important;
+    }
   }
 
-.nav>li>a {
+  #mysecondtab, #mythirdtab {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     color: grey;
   }
 
-.nav-tabs .nav-link {
-    border: none;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
+  @media (min-width: 992px) {
+    .nav-tabs {
+        border-bottom: none!important;
+    }
+
+    #mytab {
+        border-bottom: 3px solid $secondary;
+        border-top: none;
+        padding-bottom: 20px;
+        padding-right: 25px;
+    }
+
+    .extra-border {
+        border-bottom: none;
+    }
+
+    #mysecondtab, #mythirdtab {
+        border-top: none;
+        padding-bottom: 20px;
   }
 
+    #mysecondtab {
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+
+    .nav-tabs .nav-item {
+    border-top: none!important;
+  } }
 
   // tabs until here
 
