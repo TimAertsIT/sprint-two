@@ -41,7 +41,7 @@ $navbar-light-toggler-border-color: white;
 
 // first section
 
-#first-button, #third-button {
+#first-button, #third-button, #fourth-button, #fifth-button, #sixth-button {
     &:hover {
         color: $primary!important;
         background-color: white!important;
@@ -177,26 +177,15 @@ $navbar-light-toggler-border-color: white;
 // cards
 
 .diy-card {
-    border: 1px solid grey;
-    box-shadow: grey 0px 5px 10px;
-    height: 250px;
-}
-
-#card-one {
-    margin-top: 20px;
-}
-
-#card-two {
-    margin-top: 40px;
-}
-
-#card-three {
-    margin-top: 60px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: lightgrey 0px 5px 10px;
+    height: 300px;
 }
 
 @media (min-width: 992px) {
     .diy-card {
-        height: 200px;}
+        height: 250px;}
 
     #card-one {
             margin-top: 20px;
@@ -217,17 +206,20 @@ $navbar-light-toggler-border-color: white;
         width: 75%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
     #card-two {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
     
 #card-three {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px; 
     }
 }
 
